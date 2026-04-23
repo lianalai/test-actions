@@ -1,5 +1,9 @@
-name CI
+name: Broken Workflow
 on: push
+
 jobs:
-  build
+  build:
     runs-on: ubuntu-latest
+    steps:
+      - name: This will fail
+        run: exit 1
